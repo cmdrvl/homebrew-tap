@@ -4,36 +4,36 @@
 class CmdrvlHash < Formula
   desc "Streaming content hashing for JSONL manifest records"
   homepage "https://github.com/cmdrvl/hash"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/cmdrvl/hash/releases/download/v0.1.0/hash-v0.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "84430dc3d320a908b812de35558c19ba108d4c5a8951c4c5e840f131712382d0"
+      url "https://github.com/cmdrvl/hash/releases/download/v0.2.0/hashbytes-v0.2.0-aarch64-apple-darwin.tar.gz"
+      sha256 "ae22b577f2dc2b7c08e96be5214e03b66ad2aa879cc400c9102c9292572cca03"
     end
     on_intel do
-      url "https://github.com/cmdrvl/hash/releases/download/v0.1.0/hash-v0.1.0-x86_64-apple-darwin.tar.gz"
-      sha256 "b9c34fb81261013ae96c0314a6dd4be01e1556cdf203fbc43590161a4299d225"
+      url "https://github.com/cmdrvl/hash/releases/download/v0.2.0/hashbytes-v0.2.0-x86_64-apple-darwin.tar.gz"
+      sha256 "7c7d6bb59e6f742a49b9088644f6574f80acc8e3e5383753fca5f5fc2f915c41"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/cmdrvl/hash/releases/download/v0.1.0/hash-v0.1.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "9d6c2ff78929e3f671a2d25d18221eaf0494dadb0eb9d42e860ad0b228709828"
+      url "https://github.com/cmdrvl/hash/releases/download/v0.2.0/hashbytes-v0.2.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "80bbc72ce210d60d828bfc778cf98f9099726bfa5013cf619388d3f0d17b8683"
     end
     on_intel do
-      url "https://github.com/cmdrvl/hash/releases/download/v0.1.0/hash-v0.1.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "26c2f2d348545cdea289df77b8803544942423b2f254a97357793c8a3a72ed66"
+      url "https://github.com/cmdrvl/hash/releases/download/v0.2.0/hashbytes-v0.2.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "c4afcd88194c9f42fbab25e9b24a5b91fd25ba15358b595a552d4ddff8d04cba"
     end
   end
 
   def install
-    bin.install "hash"
+    bin.install "hashbytes"
   end
 
   test do
-    assert_match version.to_s, shell_output("#{bin}/hash --version")
+    assert_match version.to_s, shell_output("#{bin}/hashbytes --version")
   end
 end
