@@ -4,28 +4,29 @@
 class Shape < Formula
   desc "Structural comparability gate for CSV datasets"
   homepage "https://github.com/cmdrvl/shape"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
+
 
   on_macos do
     on_arm do
-      url "https://github.com/cmdrvl/shape/releases/download/v0.2.0/shape-v0.2.0-aarch64-apple-darwin.tar.gz"
-      sha256 "d39bb0f401e4ff08582808a0b1f7183d53539b4b2bedafed208f27fcec70bea5"
+      url "https://github.com/cmdrvl/shape/releases/download/v0.3.0/shape-v0.3.0-aarch64-apple-darwin.tar.gz"
+      sha256 "1f9e5d06c7b6c7e130f442873cdca670a1c7f23a0d297a958e3be6b940806984"
     end
     on_intel do
-      url "https://github.com/cmdrvl/shape/releases/download/v0.2.0/shape-v0.2.0-x86_64-apple-darwin.tar.gz"
-      sha256 "03cdb5a18d6553b06108ee6f7212eacf290878e0083a3263eb445fb2510f75c1"
+      url "https://github.com/cmdrvl/shape/releases/download/v0.3.0/shape-v0.3.0-x86_64-apple-darwin.tar.gz"
+      sha256 "122045a117aa2654d031c84024d65061569056e6af9dec71250f20b3678b1360"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/cmdrvl/shape/releases/download/v0.2.0/shape-v0.2.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "0a0ed4bf07625c21dfbc1b0f7579473546aa28ff061fbd91331a0b53dcb065e7"
+      url "https://github.com/cmdrvl/shape/releases/download/v0.3.0/shape-v0.3.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "002581e7b15e8ec3cb6edc8a34d39001348e1b64e012d1089e7b1959cc62c869"
     end
     on_intel do
-      url "https://github.com/cmdrvl/shape/releases/download/v0.2.0/shape-v0.2.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "826976e5360641bd749c94e5014a06d0f99aeb34682c4ea3b18ccdbf12835689"
+      url "https://github.com/cmdrvl/shape/releases/download/v0.3.0/shape-v0.3.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "5535393867bbac02dae821b8c455a05d0adad4a4f7070247d880366c21c88dc5"
     end
   end
 
