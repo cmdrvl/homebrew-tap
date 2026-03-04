@@ -4,29 +4,29 @@
 class Rvl < Formula
   desc "Reveal the smallest set of numeric changes that explain what actually changed"
   homepage "https://github.com/cmdrvl/rvl"
-  version "0.4.0"
+  version "0.5.0"
   license "MIT"
 
 
   on_macos do
     on_arm do
-      url "https://github.com/cmdrvl/rvl/releases/download/v0.4.0/rvl-v0.4.0-aarch64-apple-darwin.tar.gz"
-      sha256 "473aabf501e9fdd353067d6d10946c3c027b3947e39d74b11f25800f0be4035b"
+      url "https://github.com/cmdrvl/rvl/releases/download/v0.5.0/rvl-v0.5.0-aarch64-apple-darwin.tar.gz"
+      sha256 "2acbf457622b2e7ae37e30b7e2895a6887c59f2d1c52abe7a908dc9ec2ee6275"
     end
     on_intel do
-      url "https://github.com/cmdrvl/rvl/releases/download/v0.4.0/rvl-v0.4.0-x86_64-apple-darwin.tar.gz"
-      sha256 "5966fe2ac027cf33a34a5e47b3fff471672da86d58ac2b1a504e73b2356a1768"
+      url "https://github.com/cmdrvl/rvl/releases/download/v0.5.0/rvl-v0.5.0-x86_64-apple-darwin.tar.gz"
+      sha256 "d887db48110b56a2a8eed6da8427cbdd023f0cde2ff5e62e1c105bb4b2cac138"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/cmdrvl/rvl/releases/download/v0.4.0/rvl-v0.4.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "926daa21bad19748debdfdfa9bf2f62224c0325bbb3fbf829bc599dbc0769a74"
+      url "https://github.com/cmdrvl/rvl/releases/download/v0.5.0/rvl-v0.5.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "ea01ce2849452a829e243ec8ebe53b95cb3f61c8c7c5c179246bbee0fcd8f0f2"
     end
     on_intel do
-      url "https://github.com/cmdrvl/rvl/releases/download/v0.4.0/rvl-v0.4.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "efbb5c49e979228ca943ea0821af5c701f1731a47e3b8d2f0636b0ab85fcee42"
+      url "https://github.com/cmdrvl/rvl/releases/download/v0.5.0/rvl-v0.5.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "5e4b7b2c91ec2aed8fa9ce66c6052b579bad48ca0c02ffb5da522d3514094908"
     end
   end
 
