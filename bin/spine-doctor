@@ -1,0 +1,97 @@
+#!/usr/bin/env bash
+# spine-doctor — pipeline health check for CMD+RVL spine tools
+set -euo pipefail
+
+# Canonical tool list in pipeline order.
+TOOLS=(vacuum hashbytes fingerprint profile shape rvl lock canon pack)
+
+installed=0
+issues=0
+total=${#TOOLS[@]}
+
+printf "spine-doctor\n\nTools:\n"
+
+for tool in "${TOOLS[@]}"; do
+  if ! command -v "$tool" >/dev/null 2>&1; then
+    printf "  %-14s (not installed)\n" "$tool"
+    continue
+  fi
+  installed=$((installed + 1))
+
+  # Version
+  ver="???"
+  if ver_out=$("$tool" --version 2>/dev/null); then
+    ver=$(echo "$ver_out" | head -1 | grep -oE '[0-9]+\.[0-9]+\.[0-9]+' || echo "???")
+  else
+    ver="ERR"
+    issues=$((issues + 1))
+  fi
+
+  # Describe
+  describe_status=""
+  if desc_out=$("$tool" --describe 2>/dev/null); then
+    if echo "$desc_out" | grep -q '"schema_version".*"operator.v0"'; then
+      describe_status="ok"
+      # Check name mismatch
+      desc_name=$(echo "$desc_out" | grep -o '"name"[[:space:]]*:[[:space:]]*"[^"]*"' | head -1 | sed 's/.*"name"[[:space:]]*:[[:space:]]*"//;s/"//')
+      if [ -n "$desc_name" ] && [ "$desc_name" != "$tool" ]; then
+        describe_status="name-mismatch"
+      fi
+    else
+      describe_status="non-standard"
+    fi
+  else
+    describe_status="fail"
+  fi
+
+  # Schema
+  schema_status=""
+  if "$tool" --schema >/dev/null 2>&1; then
+    schema_status="ok"
+  else
+    schema_status="fail"
+  fi
+
+  # Format output line
+  line=$(printf "  %-14s %-8s" "$tool" "$ver")
+  case "$describe_status" in
+    ok)             line+="  \xe2\x9c\x93 describe" ;;
+    name-mismatch)  line+="  \xe2\x9a\xa0 describe (name: \"$desc_name\")"
+                    issues=$((issues + 1)) ;;
+    non-standard)   line+="  \xe2\x9a\xa0 describe (non-standard)"
+                    issues=$((issues + 1)) ;;
+    fail)           line+="  \xe2\x9c\x97 describe"
+                    issues=$((issues + 1)) ;;
+  esac
+  case "$schema_status" in
+    ok)   line+="  \xe2\x9c\x93 schema" ;;
+    fail) line+="  \xe2\x9c\x97 schema"
+          issues=$((issues + 1)) ;;
+  esac
+  printf "%b\n" "$line"
+done
+
+# Pipeline DAG (static — matches spec)
+printf "\nPipeline:\n"
+printf "  vacuum \xe2\x86\x92 hashbytes \xe2\x86\x92 fingerprint \xe2\x86\x92 lock \xe2\x86\x92 pack\n"
+printf "                     \xe2\x86\x98 shape \xe2\x86\x92 rvl\n"
+printf "           profile \xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x86\x92 (shape, rvl)\n"
+
+# Witness ledger
+witness_path="${EPISTEMIC_WITNESS:-$HOME/.epistemic/witness.jsonl}"
+witness_note=""
+if [ -f "$witness_path" ] && [ -w "$witness_path" ]; then
+  witness_note="witness ledger OK ($witness_path)"
+elif [ -f "$witness_path" ]; then
+  witness_note="witness ledger exists but not writable ($witness_path)"
+  ((issues++))
+else
+  witness_note="witness ledger not found ($witness_path)"
+fi
+
+# Summary
+printf "\nHealth: %d/%d tools installed" "$installed" "$total"
+if [ "$issues" -gt 0 ]; then
+  printf ", %d issue(s)" "$issues"
+fi
+printf "\n%s\n" "$witness_note"
