@@ -11,22 +11,22 @@ class Canon < Formula
   on_macos do
     on_arm do
       url "https://github.com/cmdrvl/canon/releases/download/v0.2.1/canon-v0.2.1-aarch64-apple-darwin.tar.gz"
-      sha256 "dfb472e3b12169f32f22f6a1fc469ae285bd607f8fbf4ec44d3d3fd0e02711f2"
+      sha256 "6f20c5c78f43f34f0fb55d419e8f386e24c11e09995bdd1fbf06b9d31afd37bb"
     end
     on_intel do
       url "https://github.com/cmdrvl/canon/releases/download/v0.2.1/canon-v0.2.1-x86_64-apple-darwin.tar.gz"
-      sha256 "8f9001877187b3bdac77df1bbbb4aecf5b8dfbded4b2cd2dc183eec095e4df96"
+      sha256 "6850a0f193d4e590409b8216340890dc3e3e194de56fa46d040adc81f7483ff1"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/cmdrvl/canon/releases/download/v0.2.1/canon-v0.2.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "e7a684dd6471fee958dd691f5cc4b4fd5b1f728994213e9a529535046506a13c"
+      sha256 "1c1753c73050ba46e90e498ac5bcbb4284e7efb721435a4bb9022281c767fd78"
     end
     on_intel do
       url "https://github.com/cmdrvl/canon/releases/download/v0.2.1/canon-v0.2.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "c93b6b9175a0ec674306c4c087d9065b0cf795f4ca4e0e5adc92f78fb504ebf6"
+      sha256 "563d4d51fcb146cde997d43710c66370a36623d5a42a462fdc1d0951726925a4"
     end
   end
 
