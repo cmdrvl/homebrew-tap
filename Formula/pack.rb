@@ -4,28 +4,29 @@
 class Pack < Formula
   desc "Seal artifacts into immutable, self-verifiable evidence packs"
   homepage "https://github.com/cmdrvl/pack"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
+
 
   on_macos do
     on_arm do
-      url "https://github.com/cmdrvl/pack/releases/download/v0.2.0/pack-0.2.0-aarch64-apple-darwin.tar.gz"
-      sha256 "1943a93ed5efd9bafc0aa64fd6f2eb739951bfb13c8a1a08ace279a4566288a5"
+      url "https://github.com/cmdrvl/pack/releases/download/v0.2.1/pack-0.2.1-aarch64-apple-darwin.tar.gz"
+      sha256 "1a230cfd53a0e8c01a0aaf79961ff9ff3da3f9fa294a57338f159d9916968681"
     end
     on_intel do
-      url "https://github.com/cmdrvl/pack/releases/download/v0.2.0/pack-0.2.0-x86_64-apple-darwin.tar.gz"
-      sha256 "13058e901282821aa16a5643205ba7d7edb3e04c0fa38a5c88c5b41c04bef7e0"
+      url "https://github.com/cmdrvl/pack/releases/download/v0.2.1/pack-0.2.1-x86_64-apple-darwin.tar.gz"
+      sha256 "b001724b990808e414ddef8b618d115e60f998970b87a6b0bbe4682478f1d903"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/cmdrvl/pack/releases/download/v0.2.0/pack-0.2.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "6b46ac73bb9a0d25b15ad5ba7c6ddd8f0f167c457f892f2da8458f4db4c924f6"
+      url "https://github.com/cmdrvl/pack/releases/download/v0.2.1/pack-0.2.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "a43bad5003663b4bd6e2952f33a8373714468736353de16d4d4eef6e461c906b"
     end
     on_intel do
-      url "https://github.com/cmdrvl/pack/releases/download/v0.2.0/pack-0.2.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "92751f11c3af78ccee01e229c11912f2d734a0e003811375a24a04f13e44bcd9"
+      url "https://github.com/cmdrvl/pack/releases/download/v0.2.1/pack-0.2.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "9e1e229c4e028e70d0f0c7b694846a76f6b89510759ae96d4a80a18714aae34c"
     end
   end
 
