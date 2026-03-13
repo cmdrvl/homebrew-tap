@@ -4,28 +4,29 @@
 class Verify < Formula
   desc "Deterministic constraint evaluation for the epistemic spine"
   homepage "https://github.com/cmdrvl/verify"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
+
 
   on_macos do
     on_arm do
-      url "https://github.com/cmdrvl/verify/releases/download/v0.1.3/verify-v0.1.3-aarch64-apple-darwin.tar.gz"
-      sha256 "6e5568a0337b81fa48bd53c3f18c498edd456d4ad5ada01a6ee568d21d7eda0c"
+      url "https://github.com/cmdrvl/verify/releases/download/v0.1.4/verify-v0.1.4-aarch64-apple-darwin.tar.gz"
+      sha256 "c465def5541a08cd93650aa170a3a9e27bafddb3a3439b8b7133cce4dadcf218"
     end
     on_intel do
-      url "https://github.com/cmdrvl/verify/releases/download/v0.1.3/verify-v0.1.3-x86_64-apple-darwin.tar.gz"
-      sha256 "2c1181e20352da72997b1ffcef529d601d49589e8b40e85752799b2772e7121a"
+      url "https://github.com/cmdrvl/verify/releases/download/v0.1.4/verify-v0.1.4-x86_64-apple-darwin.tar.gz"
+      sha256 "1322326361a9c21a9fba339ab895e1db7f10c71d3b299fc1de56560989d32978"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/cmdrvl/verify/releases/download/v0.1.3/verify-v0.1.3-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "627c44dbe170de6dbb9cce8191e93af3f33592242d60dd105bed83a8cfaaad32"
+      url "https://github.com/cmdrvl/verify/releases/download/v0.1.4/verify-v0.1.4-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "0ff3d0ff7fadcef9aac166d3974e242417dbd6ee84c46a3e5f872e2e70decf11"
     end
     on_intel do
-      url "https://github.com/cmdrvl/verify/releases/download/v0.1.3/verify-v0.1.3-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "2c4ba06485ff0326949559257b6bbe8fb1eb8ef39dec3fe80ee55ca042f82786"
+      url "https://github.com/cmdrvl/verify/releases/download/v0.1.4/verify-v0.1.4-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "a8e8b0ff01328337f1f14044254693c7678761bb6b3bc16639a8a1844fda827c"
     end
   end
 
