@@ -1,6 +1,3 @@
-# typed: false
-# frozen_string_literal: true
-
 class Airlock < Formula
   desc "Prove what crossed the model boundary"
   homepage "https://github.com/cmdrvl/airlock"
