@@ -4,28 +4,28 @@
 class Vacuum < Formula
   desc "Inventory artifacts into deterministic JSONL manifests"
   homepage "https://github.com/cmdrvl/vacuum"
-  version "0.2.1"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/cmdrvl/vacuum/releases/download/v0.2.1/vacuum-v0.2.1-aarch64-apple-darwin.tar.gz"
-      sha256 "1f0fb6520298750b5beeeec4136c9b81e7615193259a66f98488f72be43ce787"
+      url "https://github.com/cmdrvl/vacuum/releases/download/v0.3.0/vacuum-v0.3.0-aarch64-apple-darwin.tar.gz"
+      sha256 "d71e13a87cf160295cd64da5d6c9c1563fd384ed47bc9ef5c446822305621adc"
     end
     on_intel do
-      url "https://github.com/cmdrvl/vacuum/releases/download/v0.2.1/vacuum-v0.2.1-x86_64-apple-darwin.tar.gz"
-      sha256 "e7afae89940b567dcdbda550e9f918fbcfc30944bb8937eec703376ea6996141"
+      url "https://github.com/cmdrvl/vacuum/releases/download/v0.3.0/vacuum-v0.3.0-x86_64-apple-darwin.tar.gz"
+      sha256 "9290fed6ed7abc738ad9e0362310a3e840c241e27ba7ee361df9821e15112d50"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/cmdrvl/vacuum/releases/download/v0.2.1/vacuum-v0.2.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "da370a9970a90cee5c51506571e85e30c5277509ccd6b07f66e573b32f8dbdc1"
+      url "https://github.com/cmdrvl/vacuum/releases/download/v0.3.0/vacuum-v0.3.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "f5a2ad80ab58e2e846f58c691af81ac547af43a15b6059646deae23cbfa74ca9"
     end
     on_intel do
-      url "https://github.com/cmdrvl/vacuum/releases/download/v0.2.1/vacuum-v0.2.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "264dbd88597d16a316bd2a9de3f0a2d182820133325eb32f8cfcbff3342e10f9"
+      url "https://github.com/cmdrvl/vacuum/releases/download/v0.3.0/vacuum-v0.3.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "26ce8ba5b718a29a0a45d3a058a26ef14982773a7d6cb941a3eb360b436b3143"
     end
   end
 
