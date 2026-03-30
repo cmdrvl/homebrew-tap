@@ -1,28 +1,28 @@
 class Veil < Formula
   desc "Data exfiltration guard for AI coding agents"
   homepage "https://github.com/cmdrvl/veil"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/cmdrvl/veil/releases/download/v0.1.0/veil-v0.1.0-darwin-arm64.tar.gz"
-      sha256 "0ee81747d49d5071bc96e3d0dca59d2241d195089c68b221dce5a71f95492471"
+      url "https://github.com/cmdrvl/veil/releases/download/v0.2.0/veil-v0.2.0-darwin-arm64.tar.gz"
+      sha256 "4788b2c7a50cc065dcc7f01e9a3a38e4fe4f43916978440fe56ec614c9a402ba"
     end
     on_intel do
-      url "https://github.com/cmdrvl/veil/releases/download/v0.1.0/veil-v0.1.0-darwin-x86_64.tar.gz"
-      sha256 "6a47a981be559cb794215350a5f36d75d9c2fda4b776fbaefeb1da8a5f710c69"
+      url "https://github.com/cmdrvl/veil/releases/download/v0.2.0/veil-v0.2.0-darwin-x86_64.tar.gz"
+      sha256 "0c36b96644d3dbd938fcff0cd50f75b508e498675c89afb3d1003c7305be639d"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/cmdrvl/veil/releases/download/v0.1.0/veil-v0.1.0-linux-arm64.tar.gz"
-      sha256 "ce5bb0c585df15742c642c03487619c28be2030e80772bcab474e81dfbf1c666"
+      url "https://github.com/cmdrvl/veil/releases/download/v0.2.0/veil-v0.2.0-linux-arm64.tar.gz"
+      sha256 "016af277232255060c1dc4f511e1d57a55325b5162d83ec19e5fbbef42d71199"
     end
     on_intel do
-      url "https://github.com/cmdrvl/veil/releases/download/v0.1.0/veil-v0.1.0-linux-x86_64.tar.gz"
-      sha256 "c7aef9b17639df3be974f34a84ba1c253045c6eee1e0188c185b8420ff987e5f"
+      url "https://github.com/cmdrvl/veil/releases/download/v0.2.0/veil-v0.2.0-linux-x86_64.tar.gz"
+      sha256 "3ff91a5ec567115f50a32bc5a4705a16b81cb12f62812e6840811a90ac0638bc"
     end
   end
 
