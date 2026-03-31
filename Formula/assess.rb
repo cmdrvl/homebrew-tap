@@ -4,28 +4,29 @@
 class Assess < Formula
   desc "Deterministic decision classification over a spine evidence bundle"
   homepage "https://github.com/cmdrvl/assess"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
+
 
   on_macos do
     on_arm do
-      url "https://github.com/cmdrvl/assess/releases/download/v0.1.1/assess-v0.1.1-aarch64-apple-darwin.tar.gz"
-      sha256 "b6439326e0a4888d19b486ed1f6e71a8cf1d208e7b3a9c1a3688b391d3a09bab"
+      url "https://github.com/cmdrvl/assess/releases/download/v0.1.2/assess-v0.1.2-aarch64-apple-darwin.tar.gz"
+      sha256 "8f78560a351f0c4b21104f025b3e2e9a070450368b07f730c3869666876cbdda"
     end
     on_intel do
-      url "https://github.com/cmdrvl/assess/releases/download/v0.1.1/assess-v0.1.1-x86_64-apple-darwin.tar.gz"
-      sha256 "1d9d32760f0a6f8ac85e3092f867a9d0e2a46881642f1ed177049eb8a1a4fbbc"
+      url "https://github.com/cmdrvl/assess/releases/download/v0.1.2/assess-v0.1.2-x86_64-apple-darwin.tar.gz"
+      sha256 "95c9b867269b28f6ce2b7ae1bad4fd1b3dde7910867f57d577361d903fd634bb"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/cmdrvl/assess/releases/download/v0.1.1/assess-v0.1.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "d911d926abcaf6cbf391a2c2849bd03e5799af4c4fb60a32b269ba2128cca23b"
+      url "https://github.com/cmdrvl/assess/releases/download/v0.1.2/assess-v0.1.2-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "c1fa63eaf7df991aa9e8655ee1fb8533391e7706438cf7da10472013b082e99a"
     end
     on_intel do
-      url "https://github.com/cmdrvl/assess/releases/download/v0.1.1/assess-v0.1.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "78f6bc90c79b2afa6e0150d844ab1af0a3544524f9d9cc9af351974628853c28"
+      url "https://github.com/cmdrvl/assess/releases/download/v0.1.2/assess-v0.1.2-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "6bba6f5dbf6d94b4f3ddfd7ad6eb03b0650bce418a121a1cb381df7369cd3ed5"
     end
   end
 
