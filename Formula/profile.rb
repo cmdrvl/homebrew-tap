@@ -4,28 +4,28 @@
 class Profile < Formula
   desc "Creates, validates, and freezes column-scoping profiles for report tools"
   homepage "https://github.com/cmdrvl/profile"
-  version "0.2.1"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/cmdrvl/profile/releases/download/v0.2.1/profile-v0.2.1-aarch64-apple-darwin.tar.gz"
-      sha256 "f88380ca744330beb437a848c20df17baccc4f388ed9d6375b94ba938996a274"
+      url "https://github.com/cmdrvl/profile/releases/download/v0.3.0/profile-v0.3.0-aarch64-apple-darwin.tar.gz"
+      sha256 "6c47d332060e83e5ba1328a9e2b45f5507c5513b8861dfc19960ec7277a92d62"
     end
     on_intel do
-      url "https://github.com/cmdrvl/profile/releases/download/v0.2.1/profile-v0.2.1-x86_64-apple-darwin.tar.gz"
-      sha256 "5c41b0a9f72fec1b099216e043c6e1566094d01f42ace07715c6bf797335611b"
+      url "https://github.com/cmdrvl/profile/releases/download/v0.3.0/profile-v0.3.0-x86_64-apple-darwin.tar.gz"
+      sha256 "32c63fae64a76a7cb31b6b30dc466fc54f9860981f434a3627aa593364e4e7d9"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/cmdrvl/profile/releases/download/v0.2.1/profile-v0.2.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "0cf06d72449e7def7621cacbb0c22db7ca082c2cd38294c5a67a79931406c258"
+      url "https://github.com/cmdrvl/profile/releases/download/v0.3.0/profile-v0.3.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "7b2e45046b00e065ec935304e222d9c2772427ee4bcf97bd0944b56de9c47812"
     end
     on_intel do
-      url "https://github.com/cmdrvl/profile/releases/download/v0.2.1/profile-v0.2.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "21464b0cf9a8fb87eba0ed2f61cdee37d395f2d4f1975d0c33735679b45ba0b5"
+      url "https://github.com/cmdrvl/profile/releases/download/v0.3.0/profile-v0.3.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "309395d9cc4da0a7a2479b323d4c7951a1b312c460bb4490fe5267b7d38b3f7d"
     end
   end
 
