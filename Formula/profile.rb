@@ -2,30 +2,31 @@
 # frozen_string_literal: true
 
 class Profile < Formula
-  desc "Creates, validates, and freezes column-scoping profiles for report tools"
+  desc "Create, validate, and freeze column-scoping profiles"
   homepage "https://github.com/cmdrvl/profile"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
+
 
   on_macos do
     on_arm do
-      url "https://github.com/cmdrvl/profile/releases/download/v0.3.0/profile-v0.3.0-aarch64-apple-darwin.tar.gz"
-      sha256 "6c47d332060e83e5ba1328a9e2b45f5507c5513b8861dfc19960ec7277a92d62"
+      url "https://github.com/cmdrvl/profile/releases/download/v0.4.0/profile-v0.4.0-aarch64-apple-darwin.tar.gz"
+      sha256 "87c06c11f09cb23111ca8e777e403732a6a09ed4ef550d8eca3ae32cc778df82"
     end
     on_intel do
-      url "https://github.com/cmdrvl/profile/releases/download/v0.3.0/profile-v0.3.0-x86_64-apple-darwin.tar.gz"
-      sha256 "32c63fae64a76a7cb31b6b30dc466fc54f9860981f434a3627aa593364e4e7d9"
+      url "https://github.com/cmdrvl/profile/releases/download/v0.4.0/profile-v0.4.0-x86_64-apple-darwin.tar.gz"
+      sha256 "75d23fe9bfa54b76f6f634c68a8236ff74b1ae071102ef304af0f9fed6a709f4"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/cmdrvl/profile/releases/download/v0.3.0/profile-v0.3.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "7b2e45046b00e065ec935304e222d9c2772427ee4bcf97bd0944b56de9c47812"
+      url "https://github.com/cmdrvl/profile/releases/download/v0.4.0/profile-v0.4.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "839e118232196872a257b52f31a7c2d554fcaa4caf36be03407bdf05a85bba0d"
     end
     on_intel do
-      url "https://github.com/cmdrvl/profile/releases/download/v0.3.0/profile-v0.3.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "309395d9cc4da0a7a2479b323d4c7951a1b312c460bb4490fe5267b7d38b3f7d"
+      url "https://github.com/cmdrvl/profile/releases/download/v0.4.0/profile-v0.4.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "3477bab422cda2aa2f654cd4654707deae34011002c0f103bc6444c0e0d529de"
     end
   end
 
