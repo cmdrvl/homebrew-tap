@@ -4,9 +4,7 @@
 class Profile < Formula
   desc "Create, validate, and freeze column-scoping profiles"
   homepage "https://github.com/cmdrvl/profile"
-  version "0.4.0"
   license "MIT"
-
 
   on_macos do
     on_arm do
@@ -18,7 +16,6 @@ class Profile < Formula
       sha256 "75d23fe9bfa54b76f6f634c68a8236ff74b1ae071102ef304af0f9fed6a709f4"
     end
   end
-
   on_linux do
     on_arm do
       url "https://github.com/cmdrvl/profile/releases/download/v0.4.0/profile-v0.4.0-aarch64-unknown-linux-gnu.tar.gz"
