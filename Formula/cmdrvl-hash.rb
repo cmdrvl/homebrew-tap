@@ -4,27 +4,27 @@
 class CmdrvlHash < Formula
   desc "Streaming content hashing for JSONL manifest records"
   homepage "https://github.com/cmdrvl/hash"
-  version "0.3.2"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/cmdrvl/hash/releases/download/v0.3.2/hashbytes-v0.3.2-aarch64-apple-darwin.tar.gz"
-      sha256 "fa07d712ec316d1f16ca745ce69ef2948f9f448b6905ea181639a27949fa2a33"
+      url "https://github.com/cmdrvl/hash/releases/download/v0.4.0/hashbytes-v0.4.0-aarch64-apple-darwin.tar.gz"
+      sha256 "7feebd30280ddebcd90ed24872a7c1793e560abde00e04e18faa4d2c04f3ddea"
     end
     on_intel do
-      url "https://github.com/cmdrvl/hash/releases/download/v0.3.2/hashbytes-v0.3.2-x86_64-apple-darwin.tar.gz"
-      sha256 "2e65a11fa49299d792cd2ccf50a875feb9b4bc4d578de4573f91ce069eebf1c0"
+      url "https://github.com/cmdrvl/hash/releases/download/v0.4.0/hashbytes-v0.4.0-x86_64-apple-darwin.tar.gz"
+      sha256 "7813fd367872ee8cdba94cbd00ca32993cc5d4895ac7fdb0c4271c6d103dc93b"
     end
   end
   on_linux do
     on_arm do
-      url "https://github.com/cmdrvl/hash/releases/download/v0.3.2/hashbytes-v0.3.2-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "5e7101058d4cc6e82ebe9a8cc5b2fe07cbe177ff4bf7bba19fef5a73029cc452"
+      url "https://github.com/cmdrvl/hash/releases/download/v0.4.0/hashbytes-v0.4.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "6db2b38382ad79ab5365111aff629ff506587f40b7ea44d455e70756ec5d5bb5"
     end
     on_intel do
-      url "https://github.com/cmdrvl/hash/releases/download/v0.3.2/hashbytes-v0.3.2-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "ba71742b3fcfc23a04c1b3af0d1017ddb14b041589b5820b293fbe1e521fd7fd"
+      url "https://github.com/cmdrvl/hash/releases/download/v0.4.0/hashbytes-v0.4.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "de36894431bb4d5d7311ff74395ea1c0c44fcdbe5114266bfeaf4ec5b7961ddb"
     end
   end
 
