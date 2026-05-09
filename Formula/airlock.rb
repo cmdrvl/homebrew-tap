@@ -1,26 +1,26 @@
 class Airlock < Formula
   desc "Prove what crossed the model boundary"
   homepage "https://github.com/cmdrvl/airlock"
-  version "0.1.3"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/cmdrvl/airlock/releases/download/v0.1.3/airlock-0.1.3-aarch64-apple-darwin.tar.gz"
-      sha256 "757b8c15a56e33720f28ee272abac24d178ffdd14e48768177e60ac6257080fb"
+      url "https://github.com/cmdrvl/airlock/releases/download/v0.2.0/airlock-0.2.0-aarch64-apple-darwin.tar.gz"
+      sha256 "526ca1df821d61a93ad8e88f75e1bcfc5df906f7e8479708ab1419a1778c2c99"
     else
-      url "https://github.com/cmdrvl/airlock/releases/download/v0.1.3/airlock-0.1.3-x86_64-apple-darwin.tar.gz"
-      sha256 "c0168d3cdc7deb71f29b1a5fe0a9236bf48a8efd95d06dc4b532b75ced2f550a"
+      url "https://github.com/cmdrvl/airlock/releases/download/v0.2.0/airlock-0.2.0-x86_64-apple-darwin.tar.gz"
+      sha256 "0f8c94b69560945ca9ed15d1f976d18f5030c8448906f59cb6e2030410cc7e07"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/cmdrvl/airlock/releases/download/v0.1.3/airlock-0.1.3-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "88970b4177d50e6246968927b889e173b32a6ca29d17f27cef2fcb67bc4c3ef4"
+      url "https://github.com/cmdrvl/airlock/releases/download/v0.2.0/airlock-0.2.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "d2545ae2d3ecfb862ccaa8833955a5a664233454f7e35350d8e040fdb9412388"
     else
-      url "https://github.com/cmdrvl/airlock/releases/download/v0.1.3/airlock-0.1.3-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "5b18c7d2fc1ce04ef579148a7546fdb45d46c1151c5030f72e94eb7fcec12622"
+      url "https://github.com/cmdrvl/airlock/releases/download/v0.2.0/airlock-0.2.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "8f16182ac061a9bee7bab7a1403b150e6fec4e8ad83287a0b6593af6b6124e79"
     end
   end
 
