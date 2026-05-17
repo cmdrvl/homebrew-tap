@@ -1,26 +1,26 @@
 class Lock < Formula
   desc "Pin artifacts, fingerprints, and tool versions into a self-hashed dataset lockfile"
   homepage "https://github.com/cmdrvl/lock"
-  version "0.4.0"
+  version "0.4.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/cmdrvl/lock/releases/download/v0.4.0/lock-0.4.0-aarch64-apple-darwin.tar.gz"
-      sha256 "ba56745fbeb4999e974250cedf19ca0c317cda6416c2c3b57ac116d404487cd0"
+      url "https://github.com/cmdrvl/lock/releases/download/v0.4.1/lock-0.4.1-aarch64-apple-darwin.tar.gz"
+      sha256 "11a25432f0d44d79378d9afb8b55a3d3ee38d5e3b9ec16ca671c4334a3768398"
     else
-      url "https://github.com/cmdrvl/lock/releases/download/v0.4.0/lock-0.4.0-x86_64-apple-darwin.tar.gz"
-      sha256 "fdebe34b21bbdea5659b414a993cae32e13e3ff1edcde4585a0f0bba8973d0c2"
+      url "https://github.com/cmdrvl/lock/releases/download/v0.4.1/lock-0.4.1-x86_64-apple-darwin.tar.gz"
+      sha256 "b65d6df637992ba25bf7713e57879a32aca09dd552509a8cadddcd984191be5e"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/cmdrvl/lock/releases/download/v0.4.0/lock-0.4.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "7c105ad01bd0c01fada56af608f9c7cef960c33ef6ea41414b399a1a989d104d"
+      url "https://github.com/cmdrvl/lock/releases/download/v0.4.1/lock-0.4.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "e89ff6775de5d0e8ab3b60b87a44ab15b49a04b0e789b4129c61c75cf660cafe"
     else
-      url "https://github.com/cmdrvl/lock/releases/download/v0.4.0/lock-0.4.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "b99bf49989f82ee95b2e6bbe352727229dc108da798cb3e98a54dce5db21a7e6"
+      url "https://github.com/cmdrvl/lock/releases/download/v0.4.1/lock-0.4.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "6faf921e2bd769818ab46b8eab25fb85b55b1432f25fe20baaeff807c04f013d"
     end
   end
 
@@ -29,6 +29,6 @@ class Lock < Formula
   end
 
   test do
-    assert_match "lock 0.4.0", shell_output("#{bin}/lock --version")
+    assert_match "lock 0.4.1", shell_output("#{bin}/lock --version")
   end
 end
