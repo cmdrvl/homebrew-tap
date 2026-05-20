@@ -4,29 +4,29 @@
 class Twinning < Formula
   desc "Protocol-faithful interface twins for fast extractor iteration"
   homepage "https://github.com/cmdrvl/twinning"
-  version "0.4.0"
+  version "0.4.1"
   license "MIT"
 
 
   on_macos do
     on_arm do
-      url "https://github.com/cmdrvl/twinning/releases/download/v0.4.0/twinning-v0.4.0-aarch64-apple-darwin.tar.gz"
-      sha256 "9ed4012b4631912078e4e7fd7718295a5ed3111dafe2929639c996492613239c"
+      url "https://github.com/cmdrvl/twinning/releases/download/v0.4.1/twinning-v0.4.1-aarch64-apple-darwin.tar.gz"
+      sha256 "6de41958325b73f1bd4d79d209d43b7f93424eeaf570afcac5482fff5e4b4799"
     end
     on_intel do
-      url "https://github.com/cmdrvl/twinning/releases/download/v0.4.0/twinning-v0.4.0-x86_64-apple-darwin.tar.gz"
-      sha256 "5dad077c7915a3b8c0f7dffef5f88addfe065b75cbe63fabbe00803d0d266a9f"
+      url "https://github.com/cmdrvl/twinning/releases/download/v0.4.1/twinning-v0.4.1-x86_64-apple-darwin.tar.gz"
+      sha256 "7e5b6084210869323cad2678f08c2f4a5768d4856555fa5d712b482bbdd16aca"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/cmdrvl/twinning/releases/download/v0.4.0/twinning-v0.4.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "465a9cf3335ce90283903124da01cb2a0a6e70b2ddb70b76814413ca20d8b0bb"
+      url "https://github.com/cmdrvl/twinning/releases/download/v0.4.1/twinning-v0.4.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "40f958facfc2cacb53a9762072bf76149a951388be1831f8fa22c728adb1062d"
     end
     on_intel do
-      url "https://github.com/cmdrvl/twinning/releases/download/v0.4.0/twinning-v0.4.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "e71aa9dc21e6dbed0f910d6c6c649bf76c462833314a212ef09488cf70823514"
+      url "https://github.com/cmdrvl/twinning/releases/download/v0.4.1/twinning-v0.4.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "95fe534d7011687084a9e0953ea997e21ebed7026b68fc7b8a22f39eb9a0ce03"
     end
   end
 
