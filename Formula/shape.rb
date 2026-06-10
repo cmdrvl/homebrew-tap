@@ -4,29 +4,28 @@
 class Shape < Formula
   desc "Structural comparability gate for CSV datasets"
   homepage "https://github.com/cmdrvl/shape"
-  version "0.6.1"
   license "MIT"
 
 
   on_macos do
     on_arm do
-      url "https://github.com/cmdrvl/shape/releases/download/v0.6.1/shape-v0.6.1-aarch64-apple-darwin.tar.gz"
-      sha256 "0e8ca8197be2b491ab993f40cf117b88b5490cc0b52921ba898228c6bc03841b"
+      url "https://github.com/cmdrvl/shape/releases/download/v0.7.0/shape-v0.7.0-aarch64-apple-darwin.tar.gz"
+      sha256 "911b75d385a4fd0524ba475661d033a467406bed4531360d64faaf99f21ff79a"
     end
     on_intel do
-      url "https://github.com/cmdrvl/shape/releases/download/v0.6.1/shape-v0.6.1-x86_64-apple-darwin.tar.gz"
-      sha256 "9e95ffb253014203e19ae8559d6034430859efa842d9ead264cba1a2199c61a4"
+      url "https://github.com/cmdrvl/shape/releases/download/v0.7.0/shape-v0.7.0-x86_64-apple-darwin.tar.gz"
+      sha256 "441cf59342ec2ef735d8f3a855e65f3b0acd37b415ac24955d8cd1d8f49c59ee"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/cmdrvl/shape/releases/download/v0.6.1/shape-v0.6.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "e50f4424e783646becdab4f065a3b4d99d0e92b2d5b99dd29ae6aeafaa935ac4"
+      url "https://github.com/cmdrvl/shape/releases/download/v0.7.0/shape-v0.7.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "554e6f6a7c1f0939d4f5c5812161479b199f37d79526acf3a0406003d5524586"
     end
     on_intel do
-      url "https://github.com/cmdrvl/shape/releases/download/v0.6.1/shape-v0.6.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "823c467de2943da021824ac863560b07338d2fc4bc945887947b753a8462cce4"
+      url "https://github.com/cmdrvl/shape/releases/download/v0.7.0/shape-v0.7.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "dd11b2554e84933b7a6c001b1c22fdc6fe315312f769ec6ec4b001a0ba503610"
     end
   end
 
