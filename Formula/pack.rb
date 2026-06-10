@@ -6,7 +6,6 @@ class Pack < Formula
   homepage "https://github.com/cmdrvl/pack"
   license "MIT"
 
-
   on_macos do
     on_arm do
       url "https://github.com/cmdrvl/pack/releases/download/v0.5.0/pack-0.5.0-aarch64-apple-darwin.tar.gz"
