@@ -1,26 +1,28 @@
+# typed: false
+# frozen_string_literal: true
+
 class Lock < Formula
   desc "Pin artifacts, fingerprints, and tool versions into a self-hashed dataset lockfile"
   homepage "https://github.com/cmdrvl/lock"
-  version "0.4.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/cmdrvl/lock/releases/download/v0.4.1/lock-0.4.1-aarch64-apple-darwin.tar.gz"
-      sha256 "566d9f363fe58368b9d50e680f7e84d1a6ad89355e6d5885f4659eff28e09fb3"
+      url "https://github.com/cmdrvl/lock/releases/download/v0.5.0/lock-0.5.0-aarch64-apple-darwin.tar.gz"
+      sha256 "4e15da103103ddd30e0708c0cb74b24fd7512bdf04b50f1845929e59b76f456d"
     else
-      url "https://github.com/cmdrvl/lock/releases/download/v0.4.1/lock-0.4.1-x86_64-apple-darwin.tar.gz"
-      sha256 "83065d439eebbbe1478cd0ba2d8e075c278b6ede68a46291d2fa00c71d88e112"
+      url "https://github.com/cmdrvl/lock/releases/download/v0.5.0/lock-0.5.0-x86_64-apple-darwin.tar.gz"
+      sha256 "f07cfddaf3bbb9396c2e3ef3fff5f87c125b4d737dc4f5f57d98e2d1b5dfd7fd"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/cmdrvl/lock/releases/download/v0.4.1/lock-0.4.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "af4fd70d1616067a22be0aa12d3858d7823a7c3f0cec8b6463cd560e5f21fda5"
+      url "https://github.com/cmdrvl/lock/releases/download/v0.5.0/lock-0.5.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "1d8245d77fc434287907553e46106bf2977d67f9cc8c2ba7fa3e4462524502cc"
     else
-      url "https://github.com/cmdrvl/lock/releases/download/v0.4.1/lock-0.4.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "4a08f5561092df0b7cf039036333970dadad02cba415c2fa37d0d8b916f5244d"
+      url "https://github.com/cmdrvl/lock/releases/download/v0.5.0/lock-0.5.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "9ae907692c67b2b7e3cab39750d4385db288060ff447ba017067d221f6a756d9"
     end
   end
 
@@ -29,6 +31,6 @@ class Lock < Formula
   end
 
   test do
-    assert_match "lock 0.4.1", shell_output("#{bin}/lock --version")
+    assert_match version.to_s, shell_output("#{bin}/lock --version")
   end
 end
