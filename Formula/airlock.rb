@@ -1,7 +1,6 @@
 class Airlock < Formula
   desc "Prove what crossed the model boundary"
   homepage "https://github.com/cmdrvl/airlock"
-  version "0.3.0"
   license "MIT"
 
   on_macos do
