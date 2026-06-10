@@ -6,7 +6,6 @@ class Shape < Formula
   homepage "https://github.com/cmdrvl/shape"
   license "MIT"
 
-
   on_macos do
     on_arm do
       url "https://github.com/cmdrvl/shape/releases/download/v0.7.0/shape-v0.7.0-aarch64-apple-darwin.tar.gz"
