@@ -4,9 +4,7 @@
 class Verify < Formula
   desc "Deterministic constraint evaluation for the epistemic spine"
   homepage "https://github.com/cmdrvl/verify"
-  version "0.3.1"
   license "MIT"
-
 
   on_macos do
     on_arm do
