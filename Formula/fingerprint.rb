@@ -1,7 +1,7 @@
 class Fingerprint < Formula
   desc "Determine whether an artifact matches a known template"
   homepage "https://github.com/cmdrvl/fingerprint"
-  license "Proprietary"
+  license "MIT"
 
   on_macos do
     on_arm do
