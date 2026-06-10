@@ -4,7 +4,6 @@
 class Vacuum < Formula
   desc "Inventory artifacts into deterministic JSONL manifests"
   homepage "https://github.com/cmdrvl/vacuum"
-  version "0.5.0"
   license "MIT"
 
   on_macos do
