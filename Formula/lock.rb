@@ -2,7 +2,7 @@
 # frozen_string_literal: true
 
 class Lock < Formula
-  desc "Pin artifacts, fingerprints, and tool versions into a self-hashed dataset lockfile"
+  desc "Create self-hashed dataset lockfiles"
   homepage "https://github.com/cmdrvl/lock"
   license "MIT"
 
