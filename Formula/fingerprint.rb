@@ -1,28 +1,27 @@
 class Fingerprint < Formula
   desc "Determine whether an artifact matches a known template"
   homepage "https://github.com/cmdrvl/fingerprint"
-  version "0.8.0"
   license "Proprietary"
 
   on_macos do
     on_arm do
-      url "https://github.com/cmdrvl/fingerprint/releases/download/v0.8.0/fingerprint-v0.8.0-aarch64-apple-darwin.tar.gz"
-      sha256 "0fce61d5446841afcf3fa20cab067ff755f8289dbc6823f0fc970900cffdc5fc"
+      url "https://github.com/cmdrvl/fingerprint/releases/download/v0.9.0/fingerprint-v0.9.0-aarch64-apple-darwin.tar.gz"
+      sha256 "64d69ae079addd507826dbaed2708c119b48a23a513a3805ee994a5cf32f194b"
     end
     on_intel do
-      url "https://github.com/cmdrvl/fingerprint/releases/download/v0.8.0/fingerprint-v0.8.0-x86_64-apple-darwin.tar.gz"
-      sha256 "fea0a17dceb03418006dd68a8b27dbc5f9a0d96e8561cfd33e7e16d908741581"
+      url "https://github.com/cmdrvl/fingerprint/releases/download/v0.9.0/fingerprint-v0.9.0-x86_64-apple-darwin.tar.gz"
+      sha256 "d32a785a6a4c622673cd104a63ee36dd0ce647e5303df769f791517476057381"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/cmdrvl/fingerprint/releases/download/v0.8.0/fingerprint-v0.8.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "06dbabe5562021cce2a33a924b74c3963a61f8aaad7942073b06deea9cc21d36"
+      url "https://github.com/cmdrvl/fingerprint/releases/download/v0.9.0/fingerprint-v0.9.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "48d3727814051b49717a7d6013a53e8b03d0e6b944617dfc05d38407c1a887c8"
     end
     on_intel do
-      url "https://github.com/cmdrvl/fingerprint/releases/download/v0.8.0/fingerprint-v0.8.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "dd004fc9751e3fd79817c35b38d6239e27d2238f294cb7113eb2ac67a1485175"
+      url "https://github.com/cmdrvl/fingerprint/releases/download/v0.9.0/fingerprint-v0.9.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "2417aefc7b805c4748df8c1311b7bdcdb9093e356e808d2e0980e61678fd5d6f"
     end
   end
 
