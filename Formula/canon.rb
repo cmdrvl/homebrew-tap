@@ -4,29 +4,29 @@
 class Canon < Formula
   desc "Resolve messy identifiers to canonical IDs using versioned registries"
   homepage "https://github.com/cmdrvl/canon"
-  version "0.9.1"
+  version "0.10.0"
   license "MIT"
 
 
   on_macos do
     on_arm do
-      url "https://github.com/cmdrvl/canon/releases/download/v0.9.1/canon-v0.9.1-aarch64-apple-darwin.tar.gz"
-      sha256 "7c06012da40c3ef72f84b1ef5f3c2f2ecfc7992a1aacc8d5ceab9f5d1a43df4b"
+      url "https://github.com/cmdrvl/canon/releases/download/v0.10.0/canon-v0.10.0-aarch64-apple-darwin.tar.gz"
+      sha256 "3584e4df8db132697ba0482d3effd1f248e9a0374ce4a4cad3fb05b5b1180958"
     end
     on_intel do
-      url "https://github.com/cmdrvl/canon/releases/download/v0.9.1/canon-v0.9.1-x86_64-apple-darwin.tar.gz"
-      sha256 "890d1b73be1034e143568bc1bd67b012fc90a19c9abb9961cd18e4a62a9d0c3f"
+      url "https://github.com/cmdrvl/canon/releases/download/v0.10.0/canon-v0.10.0-x86_64-apple-darwin.tar.gz"
+      sha256 "031c953eac6c893a54cc30858c5dc80c9996c2822c0933a5134c6f69bff3cbd6"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/cmdrvl/canon/releases/download/v0.9.1/canon-v0.9.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "3015e78931d8de85baa376e09a9f39df7b2bd030b90640bb5b7e2f3fe755ffa6"
+      url "https://github.com/cmdrvl/canon/releases/download/v0.10.0/canon-v0.10.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "cda2d865745fd8b22f83974a9b408619b19301ccc83b5c46fabac6fe46937184"
     end
     on_intel do
-      url "https://github.com/cmdrvl/canon/releases/download/v0.9.1/canon-v0.9.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "7268b8eb33402d88b5ee8de8712083f284e106a1ccf6fefe39a75b2fa8a8e19f"
+      url "https://github.com/cmdrvl/canon/releases/download/v0.10.0/canon-v0.10.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "83ae87316ce286dd0bd75704a463ce4893eeecd207b5cd95905427a3a15b02cc"
     end
   end
 
