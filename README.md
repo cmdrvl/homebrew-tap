@@ -18,6 +18,7 @@ brew install cmdrvl/tap/airlock
 | [canon](https://github.com/cmdrvl/canon) | Resolve messy identifiers to canonical IDs using versioned registries |
 | [cmdrvl-benchmark](https://github.com/cmdrvl/benchmark) | Gold-set scoring for extraction pipelines |
 | [cmdrvl-hash](https://github.com/cmdrvl/hash) | Streaming content hashing for JSONL manifest records |
+| [decoding](https://github.com/cmdrvl/decoding) | Deterministic convergence engine for legacy-system archaeology |
 | [fingerprint](https://github.com/cmdrvl/fingerprint) | Determine whether an artifact matches a known template |
 | [lock](https://github.com/cmdrvl/lock) | Pin artifacts, fingerprints, and tool versions into a self-hashed dataset lockfile |
 | [pack](https://github.com/cmdrvl/pack) | Seal artifacts into immutable, self-verifiable evidence packs |
