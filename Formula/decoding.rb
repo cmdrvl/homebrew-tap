@@ -4,7 +4,6 @@
 class Decoding < Formula
   desc "Deterministic convergence engine for legacy-system archaeology"
   homepage "https://github.com/cmdrvl/decoding"
-  version "0.3.0"
   license "MIT"
 
   on_macos do
