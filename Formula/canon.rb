@@ -4,9 +4,7 @@
 class Canon < Formula
   desc "Resolve messy identifiers to canonical IDs using versioned registries"
   homepage "https://github.com/cmdrvl/canon"
-  version "0.11.0"
   license "MIT"
-
 
   on_macos do
     on_arm do
