@@ -8,23 +8,23 @@ class Shape < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/cmdrvl/shape/releases/download/v0.7.0/shape-v0.7.0-aarch64-apple-darwin.tar.gz"
-      sha256 "911b75d385a4fd0524ba475661d033a467406bed4531360d64faaf99f21ff79a"
+      url "https://github.com/cmdrvl/shape/releases/download/v0.8.0/shape-v0.8.0-aarch64-apple-darwin.tar.gz"
+      sha256 "5fffc57c577c27deade57446750e7a60baf79fcf8516b13e0a6d371aee2d1871"
     end
     on_intel do
-      url "https://github.com/cmdrvl/shape/releases/download/v0.7.0/shape-v0.7.0-x86_64-apple-darwin.tar.gz"
-      sha256 "441cf59342ec2ef735d8f3a855e65f3b0acd37b415ac24955d8cd1d8f49c59ee"
+      url "https://github.com/cmdrvl/shape/releases/download/v0.8.0/shape-v0.8.0-x86_64-apple-darwin.tar.gz"
+      sha256 "5382d564b0a4b32a7f7f6a0f0a9b5e685659967c910055e7414f8be2260fe51d"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/cmdrvl/shape/releases/download/v0.7.0/shape-v0.7.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "554e6f6a7c1f0939d4f5c5812161479b199f37d79526acf3a0406003d5524586"
+      url "https://github.com/cmdrvl/shape/releases/download/v0.8.0/shape-v0.8.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "c5a6960ddf51ccd671470ac6ba84ee63edd9dbf97c9ac0cb2f31a3c0c4fbf7ab"
     end
     on_intel do
-      url "https://github.com/cmdrvl/shape/releases/download/v0.7.0/shape-v0.7.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "dd11b2554e84933b7a6c001b1c22fdc6fe315312f769ec6ec4b001a0ba503610"
+      url "https://github.com/cmdrvl/shape/releases/download/v0.8.0/shape-v0.8.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "9a74986487c220881578065d00ccadbe668f376e5df72ba4a2c7eddd801a5b39"
     end
   end
 
