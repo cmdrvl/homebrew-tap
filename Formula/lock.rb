@@ -8,21 +8,21 @@ class Lock < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/cmdrvl/lock/releases/download/v0.5.0/lock-0.5.0-aarch64-apple-darwin.tar.gz"
-      sha256 "4e15da103103ddd30e0708c0cb74b24fd7512bdf04b50f1845929e59b76f456d"
+      url "https://github.com/cmdrvl/lock/releases/download/v0.6.0/lock-0.6.0-aarch64-apple-darwin.tar.gz"
+      sha256 "15f513a8e241cee4e173cdfaa1024f7b5b52f96a1a36137ae9466b8ae411691e"
     else
-      url "https://github.com/cmdrvl/lock/releases/download/v0.5.0/lock-0.5.0-x86_64-apple-darwin.tar.gz"
-      sha256 "f07cfddaf3bbb9396c2e3ef3fff5f87c125b4d737dc4f5f57d98e2d1b5dfd7fd"
+      url "https://github.com/cmdrvl/lock/releases/download/v0.6.0/lock-0.6.0-x86_64-apple-darwin.tar.gz"
+      sha256 "7830a14b85526182e68b2479513a9431a0d273a158ea1d8dc18251cc7db130e3"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/cmdrvl/lock/releases/download/v0.5.0/lock-0.5.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "1d8245d77fc434287907553e46106bf2977d67f9cc8c2ba7fa3e4462524502cc"
+      url "https://github.com/cmdrvl/lock/releases/download/v0.6.0/lock-0.6.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "298486352939eb8ff86c96d0c52393ba6cb18b3f8be99d282bcd4aba5e3db8a0"
     else
-      url "https://github.com/cmdrvl/lock/releases/download/v0.5.0/lock-0.5.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "9ae907692c67b2b7e3cab39750d4385db288060ff447ba017067d221f6a756d9"
+      url "https://github.com/cmdrvl/lock/releases/download/v0.6.0/lock-0.6.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "263d8d60f248870ab1c57c9269da852ec35cae1eed5bcf4b7a14601104a0bd84"
     end
   end
 
