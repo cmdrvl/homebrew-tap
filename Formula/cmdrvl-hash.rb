@@ -8,22 +8,22 @@ class CmdrvlHash < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/cmdrvl/hash/releases/download/v0.5.0/hashbytes-v0.5.0-aarch64-apple-darwin.tar.gz"
-      sha256 "6d6ce782559caca943813e750731d0844aa96e2508836027c5844d506432fee2"
+      url "https://github.com/cmdrvl/hash/releases/download/v0.5.1/hashbytes-v0.5.1-aarch64-apple-darwin.tar.gz"
+      sha256 "c28de433c8bc6b96c9b1657bd02ae09eff70d1bb6db05cab2952ea7752996db9"
     end
     on_intel do
-      url "https://github.com/cmdrvl/hash/releases/download/v0.5.0/hashbytes-v0.5.0-x86_64-apple-darwin.tar.gz"
-      sha256 "8b81d812efc2d3525d1703a89ec14aa1e08e3e479603f6d51231818888b2ec70"
+      url "https://github.com/cmdrvl/hash/releases/download/v0.5.1/hashbytes-v0.5.1-x86_64-apple-darwin.tar.gz"
+      sha256 "af0ea4b28a2c3365d38b577bbe61f09ddd0ac4c8a95ba992f088ea25b19e2f24"
     end
   end
   on_linux do
     on_arm do
-      url "https://github.com/cmdrvl/hash/releases/download/v0.5.0/hashbytes-v0.5.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "00ace84bfcb670bfa1ca37d34413a451944e9a0c1f06ea5ff3e3d8175cc833d9"
+      url "https://github.com/cmdrvl/hash/releases/download/v0.5.1/hashbytes-v0.5.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "cb12cc1b815013a8bc6c0e3830e99c6c067eae0665b6c2c41b2f1bbcd40b3a19"
     end
     on_intel do
-      url "https://github.com/cmdrvl/hash/releases/download/v0.5.0/hashbytes-v0.5.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "977f6486c62f9d561befcaf381f22cf638c0b042db243fbf7f3f66cbc0ecf5c6"
+      url "https://github.com/cmdrvl/hash/releases/download/v0.5.1/hashbytes-v0.5.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "3dfe3285fbc7af13e3085f1f0cc116bff9e2109af5537e821fdd0bf3c6f22cbe"
     end
   end
 
