@@ -2,26 +2,28 @@ class Fingerprint < Formula
   desc "Determine whether an artifact matches a known template"
   homepage "https://github.com/cmdrvl/fingerprint"
   license "MIT"
+  version "0.12.0"
+  revision 1
 
   on_macos do
     on_arm do
-      url "https://github.com/cmdrvl/fingerprint/releases/download/v0.12.0/fingerprint-v0.12.0-aarch64-apple-darwin.tar.gz"
-      sha256 "a107bf8488886beff022acc7609836990e43b0d4d20f19f82f588e749d595c7f"
+      url "https://github.com/cmdrvl/fingerprint/releases/download/v0.12.0/fingerprint-v0.12.0-aarch64-apple-darwin-licensed.tar.gz"
+      sha256 "78086723c7a8047ccb1f3c51c412f4b2533885f2589ca7f23254e5585a1418af"
     end
     on_intel do
-      url "https://github.com/cmdrvl/fingerprint/releases/download/v0.12.0/fingerprint-v0.12.0-x86_64-apple-darwin.tar.gz"
-      sha256 "02c28b3a2ce5ddb6ec9f08b7b11b64292a8c97c3176afc633450d0ef3cb3a390"
+      url "https://github.com/cmdrvl/fingerprint/releases/download/v0.12.0/fingerprint-v0.12.0-x86_64-apple-darwin-licensed.tar.gz"
+      sha256 "234f694a28fc0f5615ace9b5b1d305665f91cd21e3451d875e90c1576e9384d9"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/cmdrvl/fingerprint/releases/download/v0.12.0/fingerprint-v0.12.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "6f8a6cb90f840c8432b572716cfa281e7927eed5d1ae044870cb7d3adc0d155b"
+      url "https://github.com/cmdrvl/fingerprint/releases/download/v0.12.0/fingerprint-v0.12.0-aarch64-unknown-linux-gnu-licensed.tar.gz"
+      sha256 "fc6c02bc2e814731e454fdbdf3287b7bb9629255c83ab717e9cb7fafca2118ae"
     end
     on_intel do
-      url "https://github.com/cmdrvl/fingerprint/releases/download/v0.12.0/fingerprint-v0.12.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "6e9f74865b9f412312bf6a2fe99dfa8c3bfa03e93cc73e8f19974c50a33c9ed6"
+      url "https://github.com/cmdrvl/fingerprint/releases/download/v0.12.0/fingerprint-v0.12.0-x86_64-unknown-linux-gnu-licensed.tar.gz"
+      sha256 "d8e7868e8f992679fa572741d6d1c1f99262db020f1c843e95f9c685b01cf60c"
     end
   end
 
