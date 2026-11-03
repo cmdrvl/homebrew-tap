@@ -8,22 +8,22 @@ class Canon < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/cmdrvl/canon/releases/download/v0.14.0/canon-v0.14.0-aarch64-apple-darwin.tar.gz"
-      sha256 "80ae8abf094ff2574ed293bc58faecb188b82d06bb374173e8d64296e6854992"
+      url "https://github.com/cmdrvl/canon/releases/download/v0.15.0/canon-v0.15.0-aarch64-apple-darwin.tar.gz"
+      sha256 "b47001d6fa6852053115e884eb7ecb20b328deaf75995a9a358a03ae2121f4db"
     end
     on_intel do
-      url "https://github.com/cmdrvl/canon/releases/download/v0.14.0/canon-v0.14.0-x86_64-apple-darwin.tar.gz"
-      sha256 "5ac128b7d31cf71727208e69dc87d5a5c8d625946a153fef5591af091378afcf"
+      url "https://github.com/cmdrvl/canon/releases/download/v0.15.0/canon-v0.15.0-x86_64-apple-darwin.tar.gz"
+      sha256 "2514d728ea4c6af6ca72f61e13ce1d73ec70bcf390f2f583360eb78696ebf218"
     end
   end
   on_linux do
     on_arm do
-      url "https://github.com/cmdrvl/canon/releases/download/v0.14.0/canon-v0.14.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "076a212a3d3953a63ee8e3e42f0431a478e6984fb7d13f414437b919ea7dbe45"
+      url "https://github.com/cmdrvl/canon/releases/download/v0.15.0/canon-v0.15.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "63911d593cb893a34fd69eb1db0952871298fb7f333ad6e953cc37af43a8bb35"
     end
     on_intel do
-      url "https://github.com/cmdrvl/canon/releases/download/v0.14.0/canon-v0.14.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "d853bcf3d362d8900058c8c41ffaf27724b92022a04027745c6067d218dc7e2f"
+      url "https://github.com/cmdrvl/canon/releases/download/v0.15.0/canon-v0.15.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "5be6a4e3194ade19b871cfd04b19946c7bc3858606f285cb5f11c0f63b1e28b5"
     end
   end
 
