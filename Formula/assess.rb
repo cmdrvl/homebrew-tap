@@ -8,22 +8,22 @@ class Assess < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/cmdrvl/assess/releases/download/v0.3.0/assess-v0.3.0-aarch64-apple-darwin.tar.gz"
-      sha256 "af72584f99a2ba718358b788d89ca2fcd72875d18bc6a543dfaeb267bf1b73e4"
+      url "https://github.com/cmdrvl/assess/releases/download/v0.4.0/assess-v0.4.0-aarch64-apple-darwin.tar.gz"
+      sha256 "2b6af6029363729c647c696eb884dcd40956e3f3f4cfa084247e184e7998a528"
     end
     on_intel do
-      url "https://github.com/cmdrvl/assess/releases/download/v0.3.0/assess-v0.3.0-x86_64-apple-darwin.tar.gz"
-      sha256 "9f5d6d4e427e708e08541e8dac29458264251fa5abca9d1f81042a0a98f1f42c"
+      url "https://github.com/cmdrvl/assess/releases/download/v0.4.0/assess-v0.4.0-x86_64-apple-darwin.tar.gz"
+      sha256 "bb4db7c9b4ad41abde0661c2f556dccb49d8ed5441454c9f938bcba65830f088"
     end
   end
   on_linux do
     on_arm do
-      url "https://github.com/cmdrvl/assess/releases/download/v0.3.0/assess-v0.3.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "f75bf05bf46d6647b1d8ba59f905e6361c87e0a91ef68d84d63564850021c1b2"
+      url "https://github.com/cmdrvl/assess/releases/download/v0.4.0/assess-v0.4.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "dd2bd2b79c522d986d26ef32b2ed34817aa53ea4fb89bcb6e21a0b8e55c289c1"
     end
     on_intel do
-      url "https://github.com/cmdrvl/assess/releases/download/v0.3.0/assess-v0.3.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "e7a899681cad32bcf6619dd6d02612a68215c8fb6dd5ca660682662db912a496"
+      url "https://github.com/cmdrvl/assess/releases/download/v0.4.0/assess-v0.4.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "da8e90df55efa7dbf4ec7f6f9cfaedc8c975ba2cc081da94e1be54113bde503c"
     end
   end
 
