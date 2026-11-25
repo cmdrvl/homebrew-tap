@@ -34,6 +34,13 @@ class Vacuum < Formula
     bin.install "s3-to-vacuum"
   end
 
+  def caveats
+    <<~EOS
+      This formula installs vacuum and s3-to-vacuum.
+      Use s3-to-vacuum to create a manifest from S3 objects.
+    EOS
+  end
+
   test do
     assert_match version.to_s, shell_output("#{bin}/vacuum --version")
   end

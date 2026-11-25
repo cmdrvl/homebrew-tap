@@ -31,6 +31,13 @@ class CmdrvlHash < Formula
     bin.install "hashbytes"
   end
 
+  def caveats
+    <<~EOS
+      This formula installs the hashbytes command.
+      Use hashbytes --version to check it; hash is a shell builtin.
+    EOS
+  end
+
   test do
     assert_match version.to_s, shell_output("#{bin}/hashbytes --version")
   end

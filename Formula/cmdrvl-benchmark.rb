@@ -31,6 +31,13 @@ class CmdrvlBenchmark < Formula
     bin.install "benchmark"
   end
 
+  def caveats
+    <<~EOS
+      This formula installs the benchmark command.
+      Use benchmark --version to check it.
+    EOS
+  end
+
   test do
     assert_match version.to_s, shell_output("#{bin}/benchmark --version")
   end

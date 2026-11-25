@@ -1,0 +1,86 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require "pathname"
+
+module TapCheck
+  class Error < StandardError; end
+
+  def self.binaries(name, source)
+    RubyVM::InstructionSequence.compile(source, "Formula/#{name}.rb")
+    body = source[/^  def install\n(.*?)^  end$/m, 1]
+    raise Error, "#{name}: missing install method" unless body
+
+    entries = body.lines.map(&:strip).reject { |line| line.empty? || line.start_with?("#") }
+    names = entries.map do |line|
+      match = /\Abin\.install "([a-zA-Z0-9_-]+)"\z/.match(line)
+      raise Error, "#{name}: unsupported install entry: #{line}" unless match
+
+      match[1]
+    end
+    raise Error, "#{name}: no installed binaries" if names.empty?
+
+    names.sort
+  rescue SyntaxError => e
+    raise Error, e.message
+  end
+
+  def self.check(readme, formulae, aliases)
+    rows = readme.scan(/^\| \[([a-z0-9-]+)\]\([^)]+\) \| ([^|]*) \| ([^|]*) \| [^|]* \|$/)
+    names = rows.map(&:first)
+    raise Error, "README formula table does not match Formula/*.rb" unless names.sort == formulae.keys.sort
+
+    rows.each do |name, binary_cell, alias_cell|
+      binaries = binary_cell.scan(/`([^`]+)`/).flatten.sort
+      raise Error, "#{name}: README binaries #{binaries.inspect} != #{formulae[name].inspect}" unless binaries == formulae[name]
+
+      documented_aliases = alias_cell.scan(/`([^`]+)`/).flatten.sort
+      actual_aliases = aliases.select { |_key, target| target == name }.keys.sort
+      raise Error, "#{name}: README aliases do not match Aliases/" unless documented_aliases == actual_aliases
+    end
+
+    commands = readme.scan(/^brew install (.+)$/).flatten
+    raise Error, "README has no install commands" if commands.empty?
+
+    installed = commands.flat_map do |command|
+      command.split.flat_map do |argument|
+        match = /\Acmdrvl\/tap\/(?:\{([a-z0-9,-]+)\}|([a-z0-9-]+))\z/.match(argument)
+        raise Error, "Unsupported install argument: #{argument}" unless match
+
+        match[1] ? match[1].split(",") : [match[2]]
+      end
+    end
+    unknown = installed - formulae.keys - aliases.keys
+    raise Error, "Unknown install formulae: #{unknown.join(', ')}" unless unknown.empty?
+
+    missing = formulae.keys - installed.map { |name| aliases.fetch(name, name) }
+    raise Error, "Formulae missing from install commands: #{missing.join(', ')}" unless missing.empty?
+  end
+
+  def self.run(root)
+    formula_paths = root.join("Formula").glob("*.rb")
+    raise Error, "No formulae found" if formula_paths.empty?
+
+    formulae = formula_paths.to_h { |path| [path.basename(".rb").to_s, binaries(path.basename(".rb"), path.read)] }
+    aliases = root.join("Aliases").children.to_h do |path|
+      raise Error, "#{path}: alias must be a symlink" unless path.symlink?
+      target = path.realpath
+      raise Error, "#{path}: alias must target a formula" unless formula_paths.map(&:realpath).include?(target)
+      name = path.basename.to_s
+      raise Error, "#{name}: alias shadows a formula" if formulae.key?(name)
+
+      [name, target.basename(".rb").to_s]
+    end
+    check(root.join("README.md").read, formulae, aliases)
+    puts "Checked #{formulae.length} formulae: Ruby syntax, binary mappings, #{aliases.length} aliases, and README install commands."
+  end
+end
+
+if $PROGRAM_NAME == __FILE__
+  begin
+    TapCheck.run(Pathname.new(__dir__).parent)
+  rescue TapCheck::Error, SystemCallError => e
+    warn e.message
+    exit 1
+  end
+end
