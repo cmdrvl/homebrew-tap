@@ -8,34 +8,27 @@ class CmdrvlBenchmark < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/cmdrvl/benchmark/releases/download/v0.3.0/benchmark-v0.3.0-aarch64-apple-darwin.tar.gz"
-      sha256 "a8ede84d489dc9be67dd2ffb744bb73e6fabb08fc99bc17a25c157a3b4de6142"
+      url "https://github.com/cmdrvl/benchmark/releases/download/v0.4.0/benchmark-v0.4.0-aarch64-apple-darwin.tar.gz"
+      sha256 "0014104bb9ff568f336f93fa0c6c462c72f14b0726ed8fdbce3da8d60eef59e1"
     end
     on_intel do
-      url "https://github.com/cmdrvl/benchmark/releases/download/v0.3.0/benchmark-v0.3.0-x86_64-apple-darwin.tar.gz"
-      sha256 "32e1d994f0cbcdecfe90ab471c531460daf89c2054cf546ca1f6647c59813c64"
+      url "https://github.com/cmdrvl/benchmark/releases/download/v0.4.0/benchmark-v0.4.0-x86_64-apple-darwin.tar.gz"
+      sha256 "e86ab1fc01463ab0b429bc81df40d966f335592ed4ec0da625298e78ad542b82"
     end
   end
   on_linux do
     on_arm do
-      url "https://github.com/cmdrvl/benchmark/releases/download/v0.3.0/benchmark-v0.3.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "fa59d0cafa6d074226607c82e6d906fdcd829ee52a42c3fd26a4dc246710cf48"
+      url "https://github.com/cmdrvl/benchmark/releases/download/v0.4.0/benchmark-v0.4.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "4274045de981dfb7be447c7b937f97a7f3defa0bb317b1e4772625b2bd018ef9"
     end
     on_intel do
-      url "https://github.com/cmdrvl/benchmark/releases/download/v0.3.0/benchmark-v0.3.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "10980a270066fb21cf918d3bfe31225ddf3272b307ff30d56505f6efe489bc95"
+      url "https://github.com/cmdrvl/benchmark/releases/download/v0.4.0/benchmark-v0.4.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "847a0342676c3794781db183477b986d5eb38e069cb148b7432832aaf8ff72fc"
     end
   end
 
   def install
     bin.install "benchmark"
-  end
-
-  def caveats
-    <<~EOS
-      This formula installs the benchmark command.
-      Use benchmark --version to check it.
-    EOS
   end
 
   test do
