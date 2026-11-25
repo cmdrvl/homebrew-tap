@@ -8,22 +8,22 @@ class Pack < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/cmdrvl/pack/releases/download/v0.6.0/pack-0.6.0-aarch64-apple-darwin.tar.gz"
-      sha256 "2a7ee31e750396a00047017b938a84a4f3ee8bc3a2f0da5b998fbcf769d29e6e"
+      url "https://github.com/cmdrvl/pack/releases/download/v0.7.0/pack-0.7.0-aarch64-apple-darwin.tar.gz"
+      sha256 "3d599796ac3ecde7099a5177e023ac2a6be70b42c58c016a76c85de6c0a5c2af"
     end
     on_intel do
-      url "https://github.com/cmdrvl/pack/releases/download/v0.6.0/pack-0.6.0-x86_64-apple-darwin.tar.gz"
-      sha256 "f709b064b19b406c278066f3256ff6c5bc4c9548a828b6a33962bce761f49495"
+      url "https://github.com/cmdrvl/pack/releases/download/v0.7.0/pack-0.7.0-x86_64-apple-darwin.tar.gz"
+      sha256 "cb975ed4726cc605ff2fcfd77715a2e6d899dacf5ff88fafa6cb274ed05d66ab"
     end
   end
   on_linux do
     on_arm do
-      url "https://github.com/cmdrvl/pack/releases/download/v0.6.0/pack-0.6.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "56101343f53108aea56c10f630d899d3812a295ff91eb30a86da8d863836db10"
+      url "https://github.com/cmdrvl/pack/releases/download/v0.7.0/pack-0.7.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "9bd95d162284757fb6454f1cb0175c11305595df63afc3cc08041d6da831670f"
     end
     on_intel do
-      url "https://github.com/cmdrvl/pack/releases/download/v0.6.0/pack-0.6.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "4e6d59e2142f8ba67faf15b4e020f2691f561fe8384251f0895df57018347f60"
+      url "https://github.com/cmdrvl/pack/releases/download/v0.7.0/pack-0.7.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "3fd99f594a3b9f8a520ed81aad036f8c2e5e39b042a515996fb4e05926689106"
     end
   end
 
