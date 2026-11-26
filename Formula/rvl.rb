@@ -8,23 +8,23 @@ class Rvl < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/cmdrvl/rvl/releases/download/v0.9.0/rvl-v0.9.0-aarch64-apple-darwin.tar.gz"
-      sha256 "5226f02ca33353f193112a6b5a662483468053c37309b5e569f9ee274f2b7339"
+      url "https://github.com/cmdrvl/rvl/releases/download/v0.9.1/rvl-v0.9.1-aarch64-apple-darwin.tar.gz"
+      sha256 "9d10dda1bd7cce1cb1c21fd81d597d0d257c5f53e303dae9087f5c3f40eee2e6"
     end
     on_intel do
-      url "https://github.com/cmdrvl/rvl/releases/download/v0.9.0/rvl-v0.9.0-x86_64-apple-darwin.tar.gz"
-      sha256 "7fcbb934a201ea3cf9a3d0fce22522ffebfb5495b9e04fe5943b71b2d7c67386"
+      url "https://github.com/cmdrvl/rvl/releases/download/v0.9.1/rvl-v0.9.1-x86_64-apple-darwin.tar.gz"
+      sha256 "13d48473fd797493de1e6b170d536789e0dfd4a452354c1fffbd964ad76b0ea8"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/cmdrvl/rvl/releases/download/v0.9.0/rvl-v0.9.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "253723b60c480212d635f2a360f9c325e2d1379a561fffc7e778cc90e178d242"
+      url "https://github.com/cmdrvl/rvl/releases/download/v0.9.1/rvl-v0.9.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "b954a308b75e415234399807695572f1be2e9ec33ea622efdf820c295fe8ab82"
     end
     on_intel do
-      url "https://github.com/cmdrvl/rvl/releases/download/v0.9.0/rvl-v0.9.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "495d0f9557214cde4da5f2c9524ed4c0fc7b5597d560534c10af7cf828bb4f52"
+      url "https://github.com/cmdrvl/rvl/releases/download/v0.9.1/rvl-v0.9.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "14603d9d91b1fbcd6d8daa40f27c95c064a79420916b0bc59181f8940b8e2a0d"
     end
   end
 
