@@ -8,22 +8,22 @@ class Profile < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/cmdrvl/profile/releases/download/v0.11.0/profile-v0.11.0-aarch64-apple-darwin.tar.gz"
-      sha256 "af7b68f9ed15a5272ca5129216427de85e431ea29c4108ea19e6c2d7883a094a"
+      url "https://github.com/cmdrvl/profile/releases/download/v0.12.0/profile-v0.12.0-aarch64-apple-darwin.tar.gz"
+      sha256 "213a358c909552a063651d804d5196d1813005f192145fdfe807e122ba66ba6d"
     end
     on_intel do
-      url "https://github.com/cmdrvl/profile/releases/download/v0.11.0/profile-v0.11.0-x86_64-apple-darwin.tar.gz"
-      sha256 "e99e000dbbbf9736928faada72f3ac6b4c64bb3d8072b6c11d99dc21220a0f78"
+      url "https://github.com/cmdrvl/profile/releases/download/v0.12.0/profile-v0.12.0-x86_64-apple-darwin.tar.gz"
+      sha256 "f8045a35132255b312e014d3e9525f1f16dc25767cc9fe9c452f8415941f8dff"
     end
   end
   on_linux do
     on_arm do
-      url "https://github.com/cmdrvl/profile/releases/download/v0.11.0/profile-v0.11.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "8d96ea1b677672f2f66867e1f7a2bcead45eb456346ba501429b2be812d02324"
+      url "https://github.com/cmdrvl/profile/releases/download/v0.12.0/profile-v0.12.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "2298c1b20bd6397ce2a69a3b26d98b6e02f4728bc82e40153c3145b09cf85016"
     end
     on_intel do
-      url "https://github.com/cmdrvl/profile/releases/download/v0.11.0/profile-v0.11.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "d3b6605f7c8969f0dbe90baad0b5279adfe931cb3a1e0fa384bee07b98b06436"
+      url "https://github.com/cmdrvl/profile/releases/download/v0.12.0/profile-v0.12.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "a8a728c6eee55c3150c3bade3ea94f8faf9c3acfbf0c2b0bdce06a59a6cec750"
     end
   end
 
