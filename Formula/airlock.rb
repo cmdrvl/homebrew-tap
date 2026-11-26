@@ -5,21 +5,21 @@ class Airlock < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/cmdrvl/airlock/releases/download/v0.3.0/airlock-0.3.0-aarch64-apple-darwin.tar.gz"
-      sha256 "6e5f76a02be62b974776933e6a75517a8128c95787808650a2ae3970a1da8f7d"
+      url "https://github.com/cmdrvl/airlock/releases/download/v0.4.0/airlock-0.4.0-aarch64-apple-darwin.tar.gz"
+      sha256 "f267b1d714758bffa0a569de900e9a0440fe01631a42620c44e02ed3c120cff0"
     else
-      url "https://github.com/cmdrvl/airlock/releases/download/v0.3.0/airlock-0.3.0-x86_64-apple-darwin.tar.gz"
-      sha256 "1565e352f7a2ac460ec4618bbb774a1582ea1e65b53eeb809f5fc991d137ebd8"
+      url "https://github.com/cmdrvl/airlock/releases/download/v0.4.0/airlock-0.4.0-x86_64-apple-darwin.tar.gz"
+      sha256 "eaed5cefc33d1e98fd566e7a264a7041cbab86725ee0bf30c1213d70a3228d9d"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/cmdrvl/airlock/releases/download/v0.3.0/airlock-0.3.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "122c273f314237a964aa78ad374134d92d0c9a8366a5e5f3bd9fae6e7d3c77a5"
+      url "https://github.com/cmdrvl/airlock/releases/download/v0.4.0/airlock-0.4.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "5b8120655bf72b1998dcadd20ab8df1e12aaf9c34c93196a6a842b3eee4680bb"
     else
-      url "https://github.com/cmdrvl/airlock/releases/download/v0.3.0/airlock-0.3.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "1f36ed1d18aee8be6914493386ba817fb9682e26bbd39599538c2edff771d614"
+      url "https://github.com/cmdrvl/airlock/releases/download/v0.4.0/airlock-0.4.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "70f334ae2528bd4300dcd9c2f06fc2dadc32c0d6d17bf8ee81be6aacf25fbcc1"
     end
   end
 
