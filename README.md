@@ -13,7 +13,7 @@ brew install cmdrvl/tap/{shape,rvl,verify,cmdrvl-hash,cmdrvl-benchmark,assess,ve
 Full set:
 
 ```bash
-brew install cmdrvl/tap/{airlock,assess,canon,cmdrvl-benchmark,cmdrvl-hash,decoding,fingerprint,lock,pack,profile,rvl,shape,twinning,vacuum,veil,verify}
+brew install cmdrvl/tap/{airlock,assess,canon,cmdrvl-benchmark,cmdrvl-hash,decoding,fingerprint,lock,pack,profile,redline,rvl,shape,twinning,vacuum,veil,verify}
 ```
 
 These formula names were checked against `Formula/*.rb`, `brew info`, and
@@ -40,6 +40,7 @@ not rename the installed binaries. `vacuum` also installs `s3-to-vacuum`, and
 | [lock](https://github.com/cmdrvl/lock) | `lock` | — | Pin artifacts, fingerprints, and tool versions into a self-hashed dataset lockfile |
 | [pack](https://github.com/cmdrvl/pack) | `pack` | — | Seal artifacts into immutable, self-verifiable evidence packs |
 | [profile](https://github.com/cmdrvl/profile) | `profile` | — | Create, validate, and freeze column-scoping profiles for report tools |
+| [redline](https://github.com/cmdrvl/redline) | `redline` | — | Diff two document versions and report every change as exact byte spans |
 | [rvl](https://github.com/cmdrvl/rvl) | `rvl` | — | Reveal the smallest set of numeric changes that explain what actually changed |
 | [shape](https://github.com/cmdrvl/shape) | `shape` | — | Structural comparability gate for CSV datasets |
 | [twinning](https://github.com/cmdrvl/twinning) | `twinning`, `twinning-mcp` | — | Runnable database and API twins with an MCP server |
