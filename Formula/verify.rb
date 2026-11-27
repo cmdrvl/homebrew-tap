@@ -8,22 +8,22 @@ class Verify < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/cmdrvl/verify/releases/download/v0.7.5/verify-v0.7.5-aarch64-apple-darwin.tar.gz"
-      sha256 "28fe07e8ae2f9c7ffc842c62aeef092780bd6e05214adc5847984b474fb62c8e"
+      url "https://github.com/cmdrvl/verify/releases/download/v0.7.6/verify-v0.7.6-aarch64-apple-darwin.tar.gz"
+      sha256 "5b77ea01ae8cb43edfad8050f0cd1274dbaa82f2a94f759e869140cd5702450c"
     end
     on_intel do
-      url "https://github.com/cmdrvl/verify/releases/download/v0.7.5/verify-v0.7.5-x86_64-apple-darwin.tar.gz"
-      sha256 "162e4b826bac076a996c123277d98fa1b7594c7d6adc2fb65401070ee309ae75"
+      url "https://github.com/cmdrvl/verify/releases/download/v0.7.6/verify-v0.7.6-x86_64-apple-darwin.tar.gz"
+      sha256 "5a01301fbb880c6c31f0ebac9187b5b0e72dfcca593363b1777a0570d2f49e7e"
     end
   end
   on_linux do
     on_arm do
-      url "https://github.com/cmdrvl/verify/releases/download/v0.7.5/verify-v0.7.5-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "0ca732983573c826b8f43b18cfd8ac0ac65a8f6b869560cc69210af99ae3e57b"
+      url "https://github.com/cmdrvl/verify/releases/download/v0.7.6/verify-v0.7.6-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "4efbb9082692ad18f758bd0c40a672fdf0c6bcf1842449b0107cb09c85275dec"
     end
     on_intel do
-      url "https://github.com/cmdrvl/verify/releases/download/v0.7.5/verify-v0.7.5-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "a8dc5c16610e8ac551be59a8e1fec3dcab81d2f3a5228c023d2135aa851f7b12"
+      url "https://github.com/cmdrvl/verify/releases/download/v0.7.6/verify-v0.7.6-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "99f3ab69ee2ebfcd5b9a3d1f8b47360bde96e65e9d8b1c17e3f253019bd97b7b"
     end
   end
 
